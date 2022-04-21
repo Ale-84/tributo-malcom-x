@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    width: 900px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #00000057;
+}
+
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo img {
+    height: 120px;
+}
+
+.header .navBar a {
+    display: inline-block;
+    color: #0d0d0e;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 15px;
+}
+
+.header .navBar a:hover {
+    border: 1px solid #0d0d0e;
+    border-radius: 5px;
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+/*Banner*/
+
+.banner {
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cBanner {
+    display: flex;
+    padding: 15px;
+}
+
+.banner .img, .bio {
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.banner img {
+    max-width: 420px;
+    border-radius: 5px;
+    box-shadow: -2px 4px 3px #555555;
+}
+
+.banner .bio {
+    margin-left: 5px;
+    border-right: 1px solid #5555557c;
+}
+
+.banner h2 {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 2px 5px #555555;
+}
+
+.banner p {
+    text-shadow: 1px 2px 5px #555555;
+}
+
+.banner figcaption {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+/*Biografia*/
+
+.biografia {
+    display: flex;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.cBio {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+.cBio .img, .bio {
+    flex: 1;
+}
+
+.cBio a {
+    color: #0d0d0e;
+    text-decoration: none;
+}
+
+.cBio p {
+    border-left: 1px solid #5555557c;
+    padding: 15px;
+}
+
+.border {
+    width: 50px;
+    height: 2px;
+    background-color: #0e0d0dad;
+    margin-top: 2px;
+    margin-bottom: 20px;
+}
+
+.cBio img {
+    max-width: 400px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 2px 4px 3px #555555;
+}
+
+.cBio figcaption {
+    font-size: 12px;
+    padding-left: 5px;
+}
+
+
+/*Raio X*/
+
+.timeline {
+    display: flex;
+    justify-content: center;
+}
+
+.cTimeline{
+    margin-top: 30px;
+}
+
+.cTimeline .img, .bio {
+    flex: 1;
+}
+
+.cTimeline img {
+    max-width: 430px;
+    border-radius: 5px;
+    box-shadow: -2px 4px 3px #555555;
+}
+
+.cTimeline .nome {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: rgba(12, 12, 12, 0.13);
+}
+
+.cTimeline a {
+    color: #0d0d0e;
+    text-decoration: none;
+}
+
+
+
+/*Footer*/
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: #555555;
+}
+
+.cFooter {
+    height: 100px;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #555555;
+}
+
+.cFooter .info{
+    margin-bottom: 20px;
+}
+
+.cFooter .info a, .p a{
+    color: #0d0d0e;
+    text-decoration: none;
+}
+
+
+/**/
+
+@media(max-width:450px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+
+    .header .container {
+        display: flex;
+        flex-flow: column wrap;
+
+    }
+
+    .cBanner {
+        flex-flow: column wrap;
+    }
+
+    .banner .img {
+        margin-bottom: 20px;
+    }
+
+     img {
+        max-width: 320px;
+    }
+
+    .cBio {
+        margin-top: 550px;
+        flex-flow: column wrap;
+    }
+
+    .cBio .bio{
+        margin-left: 10px;
+    }
+
+    .cBio .img {
+        margin-bottom: 20px;
+    }
+
+    .cTimeline{
+        margin-top: 550px;
+        flex-flow: column wrap;
+
+    }
+
+    .cTimeline .img{
+        margin-bottom: 20px;
+    }
+
+    .cTimeline .nome{
+        width: 380px;
+    }
+    .cTimeline img{
+        width: 320px;
+    }
+
+    footer{
+        width: 100%;
+    }
+}
